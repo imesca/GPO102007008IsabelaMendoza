@@ -6,6 +6,7 @@
 #include <string.h>
 #include <string>
 
+
 using namespace std;
 int main()
 {
@@ -41,9 +42,9 @@ int main()
         cin.ignore();
         getline(cin, genero);
         cout << "ingrese el precio unitario del articulo \n";
-        cin.ignore();
         cin >> preciounitario;
-        impuesto = (preciounitario*1.16); 
+        cin.ignore();
+        impuesto = (preciounitario*0.16);
         cout << "el valor del impuesto es de:" << impuesto << endl;
         total = preciounitario + impuesto;
         cout << "el total es de: $" << total <<endl; 
@@ -77,6 +78,6 @@ int main()
 
 
     }
-
+    return 0;
 }
 
